@@ -1,0 +1,514 @@
+html{
+    overflow-x: hidden;
+}
+
+.container-fluid {
+    padding: 0 !important;
+}
+
+.row {
+    margin: 0;
+}
+
+/*font-family: 'Roboto', sans-serif;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Cabin', sans-serif;
+font-family: 'Chicle', cursive;*/
+/*font-family: 'Dancing Script', cursive;*/
+/*font-family: 'Mali', cursive;*/
+
+
+#mainNavbar{
+    background-color: rgba(0, 0, 0, .4);
+    z-index: 10;
+    padding: 0;
+}
+
+
+.navbar-brand img {
+    width: 100%;
+}
+
+.navbar-collapse{
+    border-top: none;
+}
+
+.navbar-toggler:focus{
+    outline: none !important;
+    outline: 5px auto -webkit-focus-ring-color transparent;
+}
+
+.nav-item{
+    text-align: center;
+    margin: 0 10px;
+    font-size: 12px;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.nav-item:hover{
+    font-size: 16px;
+}
+.nav-item a{
+    color:white;
+}
+.nav-item:hover{
+    transition: all ease-in .3s;
+    background-color: black;
+}
+.menuButton{
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: bolder;
+    letter-spacing: 1px;
+}
+
+#page-top {
+    padding: 0;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+}
+
+section{
+    margin: 100px auto;
+}
+
+
+#about {
+    background: url("../img/parralex/aboutMe.jpg") fixed no-repeat center ;
+    background-size: cover;
+    width: 100%;
+}
+
+.aboutMe {
+    position: relative;
+    background-color: white;
+    width: 65%;
+    left: -65%;
+}
+
+.textInfo{
+    margin: 100px auto 40px auto;
+}
+
+.textInfo h3{
+    font-family: 'Dancing Script', cursive;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    font-size: 30px;
+    border-bottom: rgba(0,0,0,.6) solid 2px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.textInfo p{
+    font-family: 'Mali', cursive;
+    font-size: 16px;
+    margin: 10px auto;
+}
+
+.aboutMeFeatures p{
+    font-family: 'Dancing Script', cursive;
+}
+
+
+.imageAboutMeFeatures{
+    margin: 15px auto;
+}
+
+.imageAboutMeFeatures p{
+    font-weight: 500;
+    font-size: 14px;
+    font-family: 'Mali', cursive;
+
+}
+.imageAboutMeFeatures img{
+    height: 80px;
+}
+
+.arrowImage{
+    position: absolute;
+    bottom: 50%;
+    left: 40px;
+    transition: all ease-in-out .5s;
+    z-index: 20;
+    height: 40px;
+}
+
+.arrowImageRotate{
+    transform: rotate(180deg);
+}
+
+
+.hideButton img, .hideButton2 img{
+    cursor: pointer;
+    height: 100%;
+}
+
+.hideButton1, .hideButton2{
+    min-height: 100vh;
+}
+.hideButton img, .hideButton2 img{
+    position: relative;
+}
+
+
+.underline{
+    margin: auto;
+    height: 2px;
+    width: 20%;
+    background-color: rgba(0,0,0,.6);
+}
+
+
+#offer {
+    background: url("../img/parralex/parralex.jpg") center no-repeat fixed;
+    background-size: cover;
+    font-family: 'Cabin', sans-serif;
+    width: 100%;
+    /*min-height: 100vh;*/
+    text-align: center;
+    display:block;
+}
+
+
+
+.services{
+    position: relative;
+    background-color: white;
+    width: 80%;
+    left: 100%;
+}
+
+
+.container-offer img{
+    width: 100%;
+    padding-right: 20%;
+}
+
+
+
+
+#portfolio {
+    background: url(../img/parralex/portrolio.jpg) center no-repeat;
+    width: 100%;
+    background-size: cover;
+    min-height: 100vh;
+    color: black;
+    text-align: center;
+    transition: all ease-in .2s;
+}
+
+#portfolio h3{
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 24px;
+    padding: 20px;
+}
+#portfolio p {
+    width: 80%;
+    margin: 20px auto;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 16px;
+    font-family: 'Mali', cursive;
+}
+
+.videoContainer{
+    position: fixed;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.9);
+    z-index: 200;
+    display: none;
+}
+
+
+.btnExit{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.imageContainer img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transition: all ease-in .2s;
+
+}
+
+.imageContainer img:hover{
+    transform: scale(1.05);
+    transition: all ease-in .2s;
+}
+
+.player .vp-title .vp-title-header h1 {
+    font-size: 12px !important;
+}
+.overlay:hover{
+    background-color: rgba(0,0,0,.5);
+    cursor: pointer;
+    opacity: 1;
+    transition: all linear .3s;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    z-index: 100;
+}
+.overlaytext {
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+#contact {
+    background: url("../img/parralex.png") no-repeat center center;
+    background-size: cover;
+    text-align: center;
+    margin: 0;
+}
+
+.container-contact {
+    font-family: 'Mali', cursive;
+    position: relative;
+    margin: auto;
+    color: #dddfff;
+    display: inline-block;
+}
+
+.container-contact h3 {
+    margin: auto;
+    margin-top: 15px;
+    background-color: rgba(72, 72, 72, .5);
+    width: 300px;
+    padding: 10px 0;
+}
+
+.container-contact p {
+    margin: 10px auto;
+    width: 300px;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    background-color: rgba(72, 72, 72, .5);
+}
+
+.contact-info {
+    display: inline-block;
+    margin: 15px 10px;
+    width: 300px;
+    height: 375px;
+    background-color: rgba(72, 72, 72, 0.5);
+    overflow: hidden;
+}
+
+.contact-info p {
+    background-color: transparent;
+}
+
+.contact-p {
+    background: black;
+}
+
+.name_email_input {
+    line-height: 30px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 2px solid rgba(0, 0, 0, 0);
+    resize: none;
+}
+
+.name_email_input:focus {
+    background: #fff;
+    border: 2px solid #0088cc;
+    color: #0088cc;
+    outline: none;
+}
+
+.focused {
+    color: #0088cc;
+    border: #0088cc solid 2px;
+}
+
+#form1 p {
+    line-height: 25px;
+}
+
+#name, #email, #comment {
+    width: 80%;
+    margin: 5px;
+}
+
+#button-blue {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    float: left;
+    width: 100%;
+    border: #fbfbfb solid 4px;
+    cursor: pointer;
+    background-color: #0088cc;
+    color: white;
+    font-size: 24px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    margin-top: -4px;
+    font-weight: 700;
+}
+
+#button-blue:hover {
+    background-color: rgba(0, 0, 0, 0);
+    color: orange;
+}
+
+.submit:hover {
+    color: #0088cc;
+}
+
+.ease {
+    width: 0px;
+    height: 82px;
+    background-color: #fbfbfb;
+    -webkit-transition: .3s ease;
+    -moz-transition: .3s ease;
+    -o-transition: .3s ease;
+    -ms-transition: .3s ease;
+    transition: .3s ease;
+}
+
+.submit:hover .ease {
+    width: 100%;
+    background-color: black;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    line-height: 150%;
+    resize: vertical;
+}
+
+.button-blue {
+    color: black;
+}
+
+.sociallink {
+    display: inline-block;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.text-info {
+    color: white !important;
+    position: relative;
+    margin: 75px auto;
+}
+
+.text-info p {
+    margin: 5px auto;
+}
+
+.text-info a{
+    text-decoration: none;
+    color: white;
+}
+
+.text-info a:hover{
+    color: darkblue;
+}
+
+@media (max-width: 992px) {
+    .aboutMe{
+        width: 100%;
+        left: 0;
+    }
+
+    .imageAboutMeFeatures{
+        margin-top: 70px;
+    }
+
+    .imageAboutMeFeatures img{
+        height: 50px;
+    }
+
+    .imgTumblr{
+        width: 100% !important;
+        transform: scale(1) !important;
+
+    }
+    .services{
+        width: 100% !important;
+        left: 0 !important;
+    }
+
+    #logocontnt{
+        top:0;
+    }
+
+    .container-about{
+        padding: 40px;
+    }
+
+    .container-about p{
+        width: 80%;
+    }
+
+    .hideButton, .hideButton2{
+        display: none;
+    }
+
+    #vid_slider{
+        width: 100% !important;
+    }
+
+    .container-offer img{
+        padding-right: 0px;
+    }
+
+
+
+}
+
+
+footer {
+    color: #ddd;
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+    background-color: #292929;
+    margin: 0;
+}
+
+
+
+
